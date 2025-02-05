@@ -142,9 +142,15 @@ public class Practice03 {
             throw new IllegalArgumentException("values is null");
         }
         int length = values.length;
-        int[] results = new int[length];
-        // TODO start
-        // TODO end
-        return results;
+        for(int i = 0; i < length - 1; i++) {
+            for(int j = 0; i < length - i - 1; j++) {
+                if(values[j] > values[j + 1]) {
+                    int temp = values[i];
+                    values[j] = values[j + 1];
+                    values[j + 1] = temp;
+                }
+            }
+        }
+        return values;
     }
 }
