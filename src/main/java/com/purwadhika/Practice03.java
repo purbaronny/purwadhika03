@@ -208,5 +208,8 @@ public class Practice03 {
         System.out.println("Write a program to find the largest element in an array.");
         int[] values = {3, 7, 2, 8, 1};
         System.out.println(practice03.largestNumbers(values));
+        System.out.println("Implement a simple calculator that can perform addition, subtraction, multiplication, and division.");
+        System.out.println(practice03.calculator(5, 3, "+"));
+        System.out.println(practice03.calculator(10, 2, "/"));
     }
 }
