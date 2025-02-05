@@ -34,4 +34,14 @@ public class Practice03 {
 
         return result;
     }
+
+    public int largestNumbers(int[] values) {
+        if(values == null) {
+            throw new IllegalArgumentException("values is null");
+        }
+
+        int result = values[0];
+
+        return result;
+    }
 }
