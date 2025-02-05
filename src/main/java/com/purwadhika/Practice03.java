@@ -193,8 +193,8 @@ public class Practice03 {
             throw new IllegalArgumentException("values length is 0");
         }
         int result = values[0];
-        // TODO start
-        // TODO end
+        values = bubbleSort(values);
+        result = values[1];
         return result;
     }
 }
