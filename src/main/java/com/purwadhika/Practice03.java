@@ -2,6 +2,8 @@ package com.purwadhika;
 
 public class Practice03 {
 
+    private static char[] VOWELS = ['A', 'I', 'U', 'E', 'O', 'a', 'i', 'u', 'e', 'o'];
+
     public long calculateNumberSeries(int value) {
         if(value < 0) {
             throw new IllegalArgumentException("value must be positive integer");
@@ -123,8 +125,15 @@ public class Practice03 {
             return -1;
         }
         int result = 0;
-        // TODO start
-        // TODO end
+        char[] chs = text.toCharArray();
+        for(char ch : chs) {
+            for(char vowel : VOWELS) {
+                if(ch == vowel) {
+                    result++;
+                    break;
+                }
+            }
+        }
         return result;
     }
 }
