@@ -42,6 +42,12 @@ public class Practice03 {
 
         int result = values[0];
 
+        for(int i = 1; i < values.length; i++) {
+            if(values[i] > result) {
+                result = values[i];
+            }
+        }
+
         return result;
     }
 }
