@@ -19,7 +19,19 @@ public class Practice03 {
     }
 
     public boolean isPrime(int value) {
+        if(value < 2) {
+            return false;
+        }
+
         boolean result = true;
+
+        for(int i = 2; i < value; i++) {
+            if(value % i == 0) {
+                result = false;
+                break;
+            }
+        }
+
         return result;
     }
 }
