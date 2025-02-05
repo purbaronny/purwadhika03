@@ -83,7 +83,7 @@ public class Practice03 {
         String result = "";
         char[] chs = text.toCharArray();
         int length = chs.length;
-        for(int i = length - 1; length >= 0; i--) {
+        for(int i = length - 1; i >= 0; i--) {
             result += String.valueOf(chs[i]);
         }
         return result;
@@ -211,5 +211,7 @@ public class Practice03 {
         System.out.println("Implement a simple calculator that can perform addition, subtraction, multiplication, and division.");
         System.out.println(practice03.calculator(5, 3, "+"));
         System.out.println(practice03.calculator(10, 2, "/"));
+        System.out.println("Write a function to reverse a string without using built-in reverse functions.");
+        System.out.println(practice03.reversedString("hello"));
     }
 }
