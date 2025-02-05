@@ -17,4 +17,9 @@ public class Practice03 {
         }
         return result;
     }
+
+    public boolean isPrime(int value) {
+        boolean result = true;
+        return result;
+    }
 }
