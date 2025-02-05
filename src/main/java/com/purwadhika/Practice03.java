@@ -79,8 +79,11 @@ public class Practice03 {
             return null;
         }
         String result = "";
-        // TODO start
-        // TODO end
+        char[] chs = text.toCharArray();
+        int length = chs.length;
+        for(int i = length - 1; length >= 0; i--) {
+            result += String.valueOf(chs[i]);
+        }
         return result;
     }
 }
