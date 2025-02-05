@@ -2,7 +2,7 @@ package com.purwadhika;
 
 public class Practice03 {
 
-    private static char[] VOWELS = ['A', 'I', 'U', 'E', 'O', 'a', 'i', 'u', 'e', 'o'];
+    private static char[] VOWELS = {'A', 'I', 'U', 'E', 'O', 'a', 'i', 'u', 'e', 'o'};
 
     public long calculateNumberSeries(int value) {
         if(value < 0) {
@@ -196,5 +196,9 @@ public class Practice03 {
         values = bubbleSort(values);
         result = values[1];
         return result;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
