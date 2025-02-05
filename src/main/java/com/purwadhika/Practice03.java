@@ -243,5 +243,7 @@ public class Practice03 {
         System.out.println("Create a program to generate the Fibonacci sequence up to n terms.");
         System.out.println(practice03.fibonacci(6));
         System.out.println(practice03.fibonacci(6, 1));
+        System.out.println("Write a function to count the number of vowels in a string.");
+        System.out.println(practice03.countVowel("programming"));
     }
 }
