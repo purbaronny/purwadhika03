@@ -88,9 +88,29 @@ public class Practice03 {
     }
 
     public String fibonacci(int length, int start) {
+        if(length < 2) {
+            throw new IllegalArgumentException("start must be positive number and greater than 2");
+        }
+
+        if(start == 0 || start == 1) {
+
+        } else {
+            throw new IllegalArgumentException("start must be 0 or 1");
+        }
+
         String result = "";
-        // TODO start
-        // TODO end
+        int a = start;
+        int b = 1;
+        if(start == 1) {
+            length += 1;
+        }
+        result += a + " " + b;
+        for(int i = 2; i < length; i++) {
+            int next = a + b;
+            result += " " + next;
+            a = b;
+            b = next;
+        }
         return result;
     }
 
