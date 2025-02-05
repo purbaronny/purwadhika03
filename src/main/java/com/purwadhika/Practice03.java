@@ -156,14 +156,30 @@ public class Practice03 {
 
     public boolean isAnagram(String text1, String text2) {
         if(text1 == null || text1.isEmpty()) {
-            throw new IllegalArgumentException("text1 is null or empty string")
+            throw new IllegalArgumentException("text1 is null or empty string");
         }
         if(text2 == null || text2.isEmpty()) {
-            throw new IllegalArgumentException("text2 is null or empty string")
+            throw new IllegalArgumentException("text2 is null or empty string");
         }
-        boolean result = true;
-        // TODO start
-        // TODO end
+        text1 = text1.trim();
+        text2 = text2.trim();
+        if(text1.length() != text2.length()) {
+            throw new IllegalArgumentException("text1 length is not equal to text2 length");
+        }
+        boolean result = false;
+        int totalText1 = totalChar(text1.toCharArray());
+        int totalText2 = totalChar(text2.toCharArray());
+        if(totalText1 == totalText2) {
+            result = true;
+        }
         return result;
+    }
+
+    public int totalChar(char[] chs) {
+        int total = 0;
+        for(char ch : chs) {
+            total += (byte) ch;
+        }
+        return total;
     }
 }
