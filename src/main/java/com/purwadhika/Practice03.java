@@ -73,4 +73,14 @@ public class Practice03 {
         }
         return result;
     }
+
+    public String reversedString(String text) {
+        if(text == null) {
+            return null;
+        }
+        String result = "";
+        // TODO start
+        // TODO end
+        return result;
+    }
 }
