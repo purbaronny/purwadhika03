@@ -205,5 +205,8 @@ public class Practice03 {
         System.out.println("Create a function to check if a number is prime.");
         System.out.println(practice03.isPrime(17));
         System.out.println(practice03.isPrime(10));
+        System.out.println("Write a program to find the largest element in an array.");
+        int[] values = {3, 7, 2, 8, 1};
+        System.out.println(practice03.largestNumbers(values));
     }
 }
