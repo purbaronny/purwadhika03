@@ -191,17 +191,18 @@ public class Practice03 {
         int totalText1 = totalChar(chs1);
         int totalText2 = totalChar(chs2);
         if(totalText1 == totalText2) {
+            result = true;
             int[] ints1 = toIntArray(chs1);
             int[] ints2 = toIntArray(chs2);
-
-            result = true;
             int length = ints1.length;
             for(int i = 0; i < length; i++) {
-                if(ints1[i] != ints2[2]) {
+                if(ints1[i] != ints2[i]) {
                     result = false;
                     break;
                 }
             }
+        } else {
+
         }
         return result;
     }
@@ -271,7 +272,9 @@ public class Practice03 {
         values = new int[]{64, 34, 25, 12, 22, 11, 90};
         values = practice03.bubbleSort(values);
         System.out.println(practice03.printArray(values));
-
+        System.out.println("Create a function to check if two strings are anagrams.");
+        System.out.println(practice03.isAnagram("listen", "silent"));
+        System.out.println(practice03.isAnagram("hello", "world"));
         System.out.println("Write a program to find the second smallest element in an array.");
         values = new int[]{5, 3, 8, 1, 2, 9};
         System.out.println(practice03.getSecondSmallest(values));
