@@ -86,4 +86,15 @@ public class Practice03 {
         }
         return result;
     }
+
+    public String fibonacci(int length, int start) {
+        String result = "";
+        // TODO start
+        // TODO end
+        return result;
+    }
+
+    public String fibonacci(int length) {
+        return fibonacci(length, 0);
+    }
 }
