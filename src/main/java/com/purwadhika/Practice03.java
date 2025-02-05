@@ -199,7 +199,9 @@ public class Practice03 {
     }
 
     public static void main(String[] args) {
-        // TODO start
-        // TODO end
+        Practice03 practice03 = new Practice03();
+        System.out.println("Write a program to calculate the sum of digits in a given number.");
+        System.out.println(practice03.calculateNumberSeries(1234));
+
     }
 }
