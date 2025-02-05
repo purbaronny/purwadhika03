@@ -271,5 +271,9 @@ public class Practice03 {
         values = new int[]{64, 34, 25, 12, 22, 11, 90};
         values = practice03.bubbleSort(values);
         System.out.println(practice03.printArray(values));
+
+        System.out.println("Write a program to find the second smallest element in an array.");
+        values = new int[]{5, 3, 8, 1, 2, 9};
+        System.out.println(practice03.getSecondSmallest(values));
     }
 }
