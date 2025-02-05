@@ -56,8 +56,21 @@ public class Practice03 {
             throw new IllegalArgumentException("operand is null or empty string");
         }
         long result = 0;
-        // TODO this start
-        // TODO this end
+
+        switch (operand) {
+            case "+":   result = value1 + value2;
+                        break;
+            case "-":   result = value1 - value2;
+            break;
+            case "*":   result = value1 * value2;
+            break;
+            case "/":   if(value2 == 0) {
+                            throw new IllegalArgumentException("value2 can not be 0");
+                        }
+                        result =    value1 / value2;
+                        break;
+            default: throw new IllegalArgumentException("operand must be + or - or * or /");
+        }
         return result;
     }
 }
