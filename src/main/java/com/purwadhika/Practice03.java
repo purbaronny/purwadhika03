@@ -103,9 +103,6 @@ public class Practice03 {
         String result = "";
         int a = start;
         int b = 1;
-        if(start == 1) {
-            length += 1;
-        }
         result += a + " " + b;
         for(int i = 2; i < length; i++) {
             int next = a + b;
@@ -243,5 +240,8 @@ public class Practice03 {
         System.out.println(practice03.calculator(10, 2, "/"));
         System.out.println("Write a function to reverse a string without using built-in reverse functions.");
         System.out.println(practice03.reversedString("hello"));
+        System.out.println("Create a program to generate the Fibonacci sequence up to n terms.");
+        System.out.println(practice03.fibonacci(6));
+        System.out.println(practice03.fibonacci(6, 1));
     }
 }
