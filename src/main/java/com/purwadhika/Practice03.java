@@ -154,12 +154,12 @@ public class Practice03 {
         return values;
     }
 
-    public boolean isAnagram(String text) {
-        if(text == null) {
-            return false;
+    public boolean isAnagram(String text1, String text2) {
+        if(text1 == null || text1.isEmpty()) {
+            throw new IllegalArgumentException("text1 is null or empty string")
         }
-        if(text.trim().isEmpty()) {
-            return true;
+        if(text2 == null || text2.isEmpty()) {
+            throw new IllegalArgumentException("text2 is null or empty string")
         }
         boolean result = true;
         // TODO start
