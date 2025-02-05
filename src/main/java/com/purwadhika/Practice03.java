@@ -50,4 +50,14 @@ public class Practice03 {
 
         return result;
     }
+
+    public long calculator(int value1, int value2, String operand) {
+        if(operand == null || operand.trim().isEmpty()) {
+            throw new IllegalArgumentException("operand is null or empty string");
+        }
+        long result = 0;
+        // TODO this start
+        // TODO this end
+        return result;
+    }
 }
