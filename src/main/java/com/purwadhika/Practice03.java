@@ -140,15 +140,37 @@ public class Practice03 {
         }
         int length = values.length;
         for(int i = 0; i < length - 1; i++) {
-            for(int j = 0; i < length - i - 1; j++) {
+            for(int j = 0; j < length - i - 1; j++) {
                 if(values[j] > values[j + 1]) {
-                    int temp = values[i];
+                    int temp = values[j];
                     values[j] = values[j + 1];
                     values[j + 1] = temp;
                 }
             }
         }
         return values;
+    }
+
+    private String printArray(int[] values) {
+        if(values != null) {
+            int length = values.length;
+            if(length > 0) {
+                String text = "[";
+                for(int i = 0; i < length; i++) {
+                    text += values[i] + "";
+
+                    if(i < length - 1) {
+                        text += ", ";
+                    }
+                }
+                text += "]";
+                return text;
+            } else {
+                return "";
+            }
+        } else {
+            return null;
+        }
     }
 
     public boolean isAnagram(String text1, String text2) {
@@ -245,5 +267,9 @@ public class Practice03 {
         System.out.println(practice03.fibonacci(6, 1));
         System.out.println("Write a function to count the number of vowels in a string.");
         System.out.println(practice03.countVowel("programming"));
+        System.out.println("Implement a program to sort an array of integers using bubble sort. Pls Without built in methods :)");
+        values = new int[]{64, 34, 25, 12, 22, 11, 90};
+        values = practice03.bubbleSort(values);
+        System.out.println(practice03.printArray(values));
     }
 }
