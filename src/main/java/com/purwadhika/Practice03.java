@@ -202,6 +202,8 @@ public class Practice03 {
         Practice03 practice03 = new Practice03();
         System.out.println("Write a program to calculate the sum of digits in a given number.");
         System.out.println(practice03.calculateNumberSeries(1234));
-
+        System.out.println("Create a function to check if a number is prime.");
+        System.out.println(practice03.isPrime(17));
+        System.out.println(practice03.isPrime(10));
     }
 }
