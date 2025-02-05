@@ -182,4 +182,19 @@ public class Practice03 {
         }
         return total;
     }
+
+    public int getSecondSmallest(int[] values) {
+        if(values == null) {
+            throw new IllegalArgumentException("values is null");
+        }
+
+        int length = values.length;
+        if(length == 0) {
+            throw new IllegalArgumentException("values length is 0");
+        }
+        int result = values[0];
+        // TODO start
+        // TODO end
+        return result;
+    }
 }
