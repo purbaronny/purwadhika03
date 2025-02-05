@@ -153,4 +153,17 @@ public class Practice03 {
         }
         return values;
     }
+
+    public boolean isAnagram(String text) {
+        if(text == null) {
+            return false;
+        }
+        if(text.trim().isEmpty()) {
+            return true;
+        }
+        boolean result = true;
+        // TODO start
+        // TODO end
+        return result;
+    }
 }
