@@ -117,4 +117,14 @@ public class Practice03 {
     public String fibonacci(int length) {
         return fibonacci(length, 0);
     }
+
+    public int countVowel(String text) {
+        if(text == null) {
+            return -1;
+        }
+        int result = 0;
+        // TODO start
+        // TODO end
+        return result;
+    }
 }
